@@ -1,0 +1,28 @@
+{
+  "name": "bot-api",
+  "version": "2.0.0",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --env-file=.env dist/main.js",
+    "dev": "tsc && node --env-file=.env dist/main.js",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "axios": "^1.19.0",
+    "baileys": "git@github.com:Andresv27728/baileys-beta.git",
+    "dotenv": "^17.4.2",
+    "node-fetch": "^3.3.2",
+    "pino": "^9.3.2",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@types/node-fetch": "^2.6.11",
+    "typescript": "^5.3.3"
+  }
+}
